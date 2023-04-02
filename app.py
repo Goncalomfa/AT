@@ -39,7 +39,7 @@ from Utils.security import authenticate, identity
 from User.user_resource import UserRegister
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.sqlite' #mudar nome
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.sqlite'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['PROPAGATE_EXCEPTIONS'] = True
 alchemy.init_app(app)
